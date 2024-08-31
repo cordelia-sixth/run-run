@@ -1,18 +1,18 @@
-import { STEP } from "./constants/data.js";
+import { SCREEN_EDGE, STEP } from "./constants/data.js";
 
 const runningBtn = document.querySelector(".running-btn");
 const runningImg = document.querySelector(".running-img");
-const voice = new Audio("./public/voice.mp3");
-let offSet = 0;
+const voice = new Audio("src/public/voice.mp3");
+let currentPosition = 0;
 
 runningBtn.addEventListener("click", () => {
   voice.currentTime = 0;
   voice.play();
 
-  if (runningImg.getBoundingClientRect().left < 0) {
+  if (runningImg.getBoundingClientRect().left < SCREEN_EDGE) {
     alert("よくやった！！");
   } else {
-    offSet += STEP;
-    runningImg.style.right = `${offSet}%`;
+    currentPosition += STEP;
+    runningImg.style.right = `${currentPosition}%`;
   }
 });

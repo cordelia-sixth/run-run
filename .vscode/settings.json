@@ -8,5 +8,6 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
-  "cSpell.words": ["Ukiyoe"]
+  "cSpell.words": ["Ukiyoe"],
+  "javascript.preferences.importModuleSpecifierEnding": "js"
 }
