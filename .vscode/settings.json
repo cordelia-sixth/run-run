@@ -3,7 +3,6 @@
   "editor.formatOnSave": true,
   "prettier.configPath": ".prettierrc.json",
   "files.insertFinalNewline": true,
-  "javascript.preferences.importModuleSpecifier": "non-relative",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"

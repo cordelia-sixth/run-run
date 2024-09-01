@@ -1,4 +1,4 @@
-import { SCREEN_EDGE, STEP } from "./constants/data.js";
+import { STEP } from "/src/constants/data.js";
 
 const runningBtn = document.querySelector(".running-btn");
 const runningImg = document.querySelector(".running-img");
